@@ -1,0 +1,17 @@
+@import "../abstract/variables.scss";
+
+.nav {
+  background-color: $LightGrayishBlue;
+  position: relative;
+  z-index: 500;
+  @media screen and (max-width: $mobile) {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu {
+    @media screen and (max-width: $mobile) {
+      align-self: center;
+    }
+  }
+}

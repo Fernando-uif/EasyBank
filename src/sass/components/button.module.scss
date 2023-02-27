@@ -1,0 +1,10 @@
+@import "../abstract/variables.scss";
+
+.button {
+  border-radius: 1.5rem;
+  background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+  border:none;
+  color:#fff;
+  text-transform: capitalize;
+  padding:1rem 2rem;
+}

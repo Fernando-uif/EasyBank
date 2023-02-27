@@ -1,0 +1,32 @@
+@import "../abstract/variables.scss";
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.subtitle{
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
+.titleCard{
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.detail {
+  font-size: 1.4rem;
+  color: $GrayishBlue;
+  text-align: center;
+  padding: 0 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

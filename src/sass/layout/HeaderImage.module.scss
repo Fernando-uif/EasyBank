@@ -1,0 +1,17 @@
+@import "../abstract/variables.scss";
+.header {
+  position: relative;
+  z-index: 100;
+  top: -12.5rem;
+ 
+  &__image {
+    width: 100vw;
+  }
+  &__background {
+    @media screen and (max-width: $mobile) {
+        background-image: url("../../assets/images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+    }
+  }
+  
+}
