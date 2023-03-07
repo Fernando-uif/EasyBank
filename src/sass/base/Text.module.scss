@@ -4,6 +4,7 @@
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
+  padding:0 1rem;
 }
 .subtitle{
   font-size: 3.5rem;
@@ -29,4 +30,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.detail__articles{
+  font-size: 1.2rem;
+  color: $GrayishBlue;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-top: 1rem;
 }
