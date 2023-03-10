@@ -4,6 +4,19 @@
   background-color: $LightGrayishBlue;
   position: relative;
   z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  padding:2rem;
+  align-items: center;
+
+  &__options{
+    display:flex;
+    list-style: none;
+    color: $GrayishBlue;
+    gap:2rem;
+    font-size: 1.5rem;
+
+  }
   @media screen and (max-width: $tablet) {
     padding: 2rem;
     display: flex;
