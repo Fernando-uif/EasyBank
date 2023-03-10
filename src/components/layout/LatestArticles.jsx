@@ -20,8 +20,10 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3>Receive money in any currency width no fees</h3>
-            <p className={text['detail__articles']}>
+            <h3 className={card.title}>
+              Receive money in any currency width no fees
+            </h3>
+            <p className={text["detail__articles"]}>
               The world is getting smaller and we're becoming more mobile. So
               why should you be forced to only receive money in a single …
             </p>
@@ -33,9 +35,11 @@ export const LatestArticles = () => {
           </div>
 
           <div className={card["card__detail"]}>
-            <blockquote className={card["card__block"]}></blockquote>
-            <h3>Treat yourself without worrying about money</h3>
-            <p className={text['detail__articles']}>
+            <blockquote className={card["card__block"]}>
+              By Claire Robinson
+            </blockquote>
+            <h3 className={card.title}>Treat yourself without worrying about money</h3>
+            <p className={text["detail__articles"]}>
               Our simple budgeting feature allows you to separate out your
               spending and set realistic limits each month. That means you …
             </p>
@@ -50,8 +54,8 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Wilson Hutton
             </blockquote>
-            <h3>Take your Easybank card wherever you go</h3>
-            <p className={text['detail__articles']}>
+            <h3 className={card.title}>Take your Easybank card wherever you go</h3>
+            <p className={text["detail__articles"]}>
               We want you to enjoy your travels. This is why we don't charge any
               fees on purchases while you're abroad. We'll even show you …
             </p>
@@ -66,8 +70,8 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3>Our invite-only Beta accounts are now live!</h3>
-            <p className={text['detail__articles']}>
+            <h3 className={card.title}>Our invite-only Beta accounts are now live!</h3>
+            <p className={text["detail__articles"]}>
               After a lot of hard work by the whole team, we're excited to
               launch our beta. It's easy to request an invite through the site
               ...

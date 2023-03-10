@@ -4,12 +4,20 @@
   background-color: $LightGrayishBlue;
   position: relative;
   z-index: 500;
+  @media screen and (max-width: $tablet) {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
   @media screen and (max-width: $mobile) {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
   }
   &__menu {
+    @media screen and (max-width: $tablet) {
+      align-self: center;
+    }
     @media screen and (max-width: $mobile) {
       align-self: center;
     }
