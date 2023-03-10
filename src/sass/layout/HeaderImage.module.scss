@@ -3,19 +3,66 @@
   position: relative;
   z-index: 100;
   top: -12.5rem;
- 
+  display: flex;
+
+  @media screen and (max-width: $tablet) {
+    display: unset;
+  }
+
+  &__titleGeneration {
+    text-align: left;
+    @media screen and (max-width: $tablet) {
+      text-align: unset;
+    }
+  }
+
   &__image {
-    width: 100vw;
+    width: 50vw;
+     @media screen and (max-width:1000px) {
+        width:100%;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 100vw;
+    }
   }
+
+  &__textContainer {
+    flex-grow: 1;
+    padding: 0 3rem;
+    margin-top:10rem;
+    @media screen and (max-width: $tablet) {
+      flex-grow: unset;
+      padding: unset;
+      margin-top:unset;
+    }
+  }
+
   &__background {
-     @media screen and (max-width: $tablet) {
-       background-image: url("../../assets/images/bg-intro-mobile.svg");
-       background-repeat: no-repeat;
-        background-size: cover;
+    background-image: url("../../assets/images/bg-intro-desktop.svg");
+    order: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+
+    @media screen and (max-width: $tablet) {
+      background-image: url("../../assets/images/bg-intro-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      order: 1;
     }
+
     @media screen and (max-width: $mobile) {
-        background-size:unset;
+      background-size: unset;
     }
   }
-  
+
+  // &__button {
+  //   align-self: flex-start;
+  //   padding: 1.3rem 3rem;
+  //    @media screen and (max-width:$tablet) {
+  //     padding: unset;
+  //     align-self: unset;
+        
+  //   }
+  // }
 }
