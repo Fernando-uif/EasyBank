@@ -8,11 +8,13 @@ import easyBank from "../../sass/layout/ChooseBank.module.scss";
 export const ChooseBank = () => {
   return (
     <>
-      <h2 className={text.subtitle}>why choose Easybank?</h2>
-      <p className={text.detail}>
-        We leverage Open Banking to turn your bank account into your financial
-        hub. Control your finances like never before
-      </p>
+      <section className={`${easyBank['card__title']}`}>
+        <h2 className={`${text.subtitle} ${easyBank['card__subtitleCard']}`}>why choose Easybank?</h2>
+        <p className={`${text.detail}  ${easyBank['card__detail']}`}>
+          We leverage Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before
+        </p>
+      </section>
       <section className={easyBank.easyBankContainer}>
         <article className={text.container}>
           <div>

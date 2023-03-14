@@ -12,6 +12,37 @@
   margin-bottom: 1rem;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  &__title{
+    @media screen and (max-width:$desktop) {
+       width: 54rem;
+       padding: 0 3rem;
+        
+    }
+     @media screen and (max-width:$tablet) {
+        width: unset;
+        padding:unset;
+    }
+  }
+  &__subtitleCard{
+     @media screen and (max-width:$desktop) {
+        text-align:left;
+    }
+     @media screen and (max-width:$tablet) {
+        text-align:unset;
+        
+    }
+  }
+  &__detail{
+     @media screen and (max-width:$desktop) {
+        text-align:left;
+        padding:unset ;
+        
+    }
+      @media screen and (max-width:$tablet) {
+          text-align:center;
+          
+      }
+  }
   .title{
      @media screen and (max-width:$tablet) {
       font-size: 3rem;

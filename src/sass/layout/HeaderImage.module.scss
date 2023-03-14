@@ -18,8 +18,8 @@
 
   &__image {
     width: 50vw;
-     @media screen and (max-width:1000px) {
-        width:100%;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
     }
     @media screen and (max-width: $tablet) {
       width: 100vw;
@@ -29,14 +29,31 @@
   &__textContainer {
     flex-grow: 1;
     padding: 0 3rem;
-    margin-top:10rem;
+    margin-top: 10rem;
     @media screen and (max-width: $tablet) {
       flex-grow: unset;
       padding: unset;
-      margin-top:unset;
+      margin-top: unset;
+    }
+     @media screen and (max-width:467px) {
+        padding:0 2rem;
     }
   }
-
+  &__title {
+    @media screen and (max-width: 467px) {
+      padding: unset;
+      font-size: 3rem;
+    }
+  }
+  &__contain {
+    font-size: 2rem;
+    @media screen and (max-width: 467px) {
+      padding: unset;
+      text-align: center;
+      width: unset;
+      font-size: 1.5rem;
+    }
+  }
   &__background {
     background-image: url("../../assets/images/bg-intro-desktop.svg");
     order: 2;
@@ -56,13 +73,14 @@
     }
   }
 
-  // &__button {
-  //   align-self: flex-start;
-  //   padding: 1.3rem 3rem;
-  //    @media screen and (max-width:$tablet) {
-  //     padding: unset;
-  //     align-self: unset;
+  &__button{
+    @media screen and (max-width:$desktop) {
+       font-size: 1.8rem;
         
-  //   }
-  // }
+    }
+      @media screen and (max-width:$tablet) {
+        font-size: 1.5rem;
+      }
+
+  }
 }
