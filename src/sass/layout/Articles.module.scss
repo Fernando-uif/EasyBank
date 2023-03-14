@@ -1,0 +1,27 @@
+@import "../abstract/variables.scss";
+
+.article {
+  &__title {
+    @media screen and (max-width: $desktop) {
+      text-align: left;
+     width: 60rem;
+     padding: 5rem 8rem;
+      margin:unset;
+    }
+     @media screen and (max-width: $tablet) {
+      padding: unset;
+        text-align: center;
+    }
+  }
+  &__content{
+    @media screen and (max-width: $desktop) {
+      padding: 0 8rem;
+      display: flex;
+      gap:3rem;
+    }
+    @media screen and (max-width: $tablet) {
+      padding: 0 1em;
+      display: block;
+    }
+  }
+}

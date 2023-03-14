@@ -5,12 +5,14 @@ import card from "../../sass/layout/ChooseBank.module.scss";
 import food from "../../assets/images/image-restaurant.jpg";
 import airplane from "../../assets/images/image-plane.jpg";
 import conffeti from "../../assets/images/image-confetti.jpg";
+import article from '../../sass/layout/Articles.module.scss';
+
 
 export const LatestArticles = () => {
   return (
     <>
-      <h2 className={text.subtitle}>latest articles</h2>
-      <section>
+      <h2 className={`${text.subtitle} ${article['article__title']}`}>latest articles</h2>
+      <section className={`${article['article__content']}`}>
         <article className={card.card}>
           <div>
             <img className={card["card__img"]} src={dolars} />
