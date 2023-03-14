@@ -1,8 +1,13 @@
-@import '../abstract/variables.scss';
+@import "../abstract/variables.scss";
 
 .easyBankContainer {
-  margin-bottom: 5rem;
-  
+  margin: 5rem 0;
+  @media screen and (max-width: $desktop) {
+    display: flex;
+  }
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
 }
 
 .card {
@@ -12,44 +17,54 @@
   margin-bottom: 1rem;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  &__title{
-    @media screen and (max-width:$desktop) {
-       width: 54rem;
-       padding: 0 3rem;
-        
+  &__container {
+    background-color: $LightGrayishBlue;
+    padding: 5rem;
+  }
+  &__title {
+    @media screen and (max-width: $desktop) {
+      width: 54rem;
+      padding: 0 3rem;
     }
-     @media screen and (max-width:$tablet) {
-        width: unset;
-        padding:unset;
+    @media screen and (max-width: $tablet) {
+      width: unset;
+      padding: unset;
     }
   }
-  &__subtitleCard{
-     @media screen and (max-width:$desktop) {
-        text-align:left;
+  &__subtitleCard {
+    @media screen and (max-width: $desktop) {
+      text-align: left;
     }
-     @media screen and (max-width:$tablet) {
-        text-align:unset;
-        
+    @media screen and (max-width: $tablet) {
+      text-align: center;
     }
   }
-  &__detail{
-     @media screen and (max-width:$desktop) {
-        text-align:left;
-        padding:unset ;
-        
+  &__detailDescription {
+    @media screen and (max-width: $desktop) {
+      text-align: left;
+      padding: unset;
+      font-size: 1.5rem;
     }
-      @media screen and (max-width:$tablet) {
-          text-align:center;
-          
-      }
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
   }
-  .title{
-     @media screen and (max-width:$tablet) {
+  &__descriptionCard {
+    @media screen and (max-width: $desktop) {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+      padding: 0 15%;
+    }
+  }
+  .title {
+    @media screen and (max-width: $tablet) {
       font-size: 3rem;
     }
-     @media screen and (max-width:$mobile) {
+    @media screen and (max-width: $mobile) {
       font-size: 1.5rem;
-        
     }
   }
   &__img {
@@ -65,10 +80,9 @@
   &__block {
     margin: unset;
     text-align: left;
-    color:$GrayishBlue;
-     @media screen and (max-width:$tablet) {
+    color: $GrayishBlue;
+    @media screen and (max-width: $tablet) {
       font-size: 2rem;
-        
     }
   }
 }
