@@ -4,12 +4,23 @@
   display: flex;
   color: #fff;
   background-color: $DarkBlue;
+  padding:5rem;
+  justify-content: space-between;
   @media screen and (max-width: $tablet) {
     flex-direction: column;
     align-items: center;
   }
 }
+.logoContainer{
+  display:flex;
+  flex-direction: column;
+  gap:5rem;
+   @media screen and (max-width: $tablet) {
+      gap:1rem;
+  }
+}
 .image {
+  width: 18rem;
   @media screen and (max-width: $tablet) {
     width: 25rem;
     padding: 2.5rem 0;
@@ -19,6 +30,7 @@
 .social {
   display: flex;
   margin: unset;
+  justify-content: space-around;
   @media screen and (max-width: $tablet) {
     padding: 1.5rem 0;
     justify-content: space-around;
@@ -27,9 +39,14 @@
 
 .information {
   list-style: none;
-  display: flex;
   margin: unset;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding:unset;
+  font-size: 1.5rem;
+  column-gap: 11rem;
   @media screen and (max-width: $tablet) {
+    display: flex;
     padding: 1.5rem 0;
     text-align: center;
     flex-direction: column;
@@ -41,9 +58,11 @@
 
 .requestInfo {
   display: flex;
+  flex-direction: column;
+  gap:3rem;
+  align-items: flex-end;
   @media screen and (max-width: $tablet) {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
     padding: 1.5rem 0;
     justify-content: center;
     align-items: center;
@@ -52,5 +71,5 @@
 
 .copyRight {
   color: $GrayishBlue;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }

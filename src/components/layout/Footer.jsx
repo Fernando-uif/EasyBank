@@ -9,7 +9,7 @@ import button from "../../sass/components/button.module.scss";
 export const Footer = () => {
   return (
     <footer className={footer.container}>
-      <article>
+      <article className={footer.logoContainer}> 
         <div className={footer.image}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 20">
             <defs>
@@ -41,7 +41,6 @@ export const Footer = () => {
             </g>
           </svg>
         </div>
-
         <figure className={footer.social}>
           <img src={facebook} alt="facebook.svg" />
           <img src={youtube} alt="youtube.svg" />
@@ -50,6 +49,7 @@ export const Footer = () => {
           <img src={instagram} alt="instagram.svg" />
         </figure>
       </article>
+
       <ul className={footer.information}>
         <li>About us</li>
         <li>Contact</li>
@@ -58,6 +58,7 @@ export const Footer = () => {
         <li>Support</li>
         <li>Privacy Policy</li>
       </ul>
+      
       <article className={footer.requestInfo}>
         <button className={button.button}>request invite</button>
         <small className={footer.copyRight}>

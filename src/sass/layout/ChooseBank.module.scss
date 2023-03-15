@@ -2,9 +2,7 @@
 
 .easyBankContainer {
   margin: 5rem 0;
-  @media screen and (max-width: $desktop) {
-    display: flex;
-  }
+  display: flex;
   @media screen and (max-width: $tablet) {
     display: block;
   }
@@ -16,50 +14,45 @@
   margin-bottom: 1rem;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  @media screen and (max-width:$desktop) {
-    padding:unset;
+  padding: unset;
+  @media screen and (max-width: $tablet) {
+    padding: 2rem;
   }
-  @media screen and (max-width:$tablet) {
-      padding: 2rem;
-       
-   }
+  &__imgContainer {
+    height: 15rem;
+    @media screen and (max-width: $tablet) {
+      height: auto;
+    }
+  }
   &__container {
     background-color: $LightGrayishBlue;
     padding: 5rem;
   }
   &__title {
-    @media screen and (max-width: $desktop) {
-      width: 54rem;
-      padding: 0 3rem;
-    }
+    width: 54rem;
+    padding: 0 3rem;
     @media screen and (max-width: $tablet) {
       width: unset;
       padding: unset;
     }
   }
   &__subtitleCard {
-    @media screen and (max-width: $desktop) {
-      text-align: left;
-    }
+    text-align: left;
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
   }
   &__detailDescription {
-    @media screen and (max-width: $desktop) {
-      text-align: left;
-      padding: unset;
-      font-size: 1.5rem;
-    }
+    text-align: left;
+    padding: unset;
+    font-size: 1.5rem;
     @media screen and (max-width: $tablet) {
       text-align: center;
     }
   }
   &__descriptionCard {
-    @media screen and (max-width: $desktop) {
-      font-size: 1.5rem;
-      text-align: left;
-    }
+    font-size: 1.5rem;
+    text-align: left;
     @media screen and (max-width: $tablet) {
       text-align: center;
       padding: 0 15%;
@@ -78,11 +71,13 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    
   }
   &__detail {
-    padding: 3rem;
-    text-align: left;
+    padding: 1rem;
+    @media screen and (max-width: $tablet) {
+      padding: 3rem;
+      text-align: left;
+    }
   }
   &__block {
     margin: unset;

@@ -5,16 +5,17 @@ import card from "../../sass/layout/ChooseBank.module.scss";
 import food from "../../assets/images/image-restaurant.jpg";
 import airplane from "../../assets/images/image-plane.jpg";
 import conffeti from "../../assets/images/image-confetti.jpg";
-import article from '../../sass/layout/Articles.module.scss';
-
+import article from "../../sass/layout/Articles.module.scss";
 
 export const LatestArticles = () => {
   return (
     <>
-      <h2 className={`${text.subtitle} ${article['article__title']}`}>latest articles</h2>
-      <section className={`${article['article__content']}`}>
+      <h2 className={`${text.subtitle} ${article["article__title"]}`}>
+        latest articles
+      </h2>
+      <section className={`${article["article__content"]}`}>
         <article className={card.card}>
-          <div>
+          <div className={card["card__imgContainer"]}>
             <img className={card["card__img"]} src={dolars} />
           </div>
 
@@ -32,7 +33,7 @@ export const LatestArticles = () => {
           </div>
         </article>
         <article className={card.card}>
-          <div>
+          <div className={card["card__imgContainer"]}>
             <img className={card["card__img"]} src={food} />
           </div>
 
@@ -40,7 +41,9 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3 className={card.title}>Treat yourself without worrying about money</h3>
+            <h3 className={card.title}>
+              Treat yourself without worrying about money
+            </h3>
             <p className={text["detail__articles"]}>
               Our simple budgeting feature allows you to separate out your
               spending and set realistic limits each month. That means you …
@@ -48,7 +51,7 @@ export const LatestArticles = () => {
           </div>
         </article>
         <article className={card.card}>
-          <div>
+          <div className={card["card__imgContainer"]}>
             <img className={card["card__img"]} src={airplane} />
           </div>
 
@@ -56,7 +59,9 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Wilson Hutton
             </blockquote>
-            <h3 className={card.title}>Take your Easybank card wherever you go</h3>
+            <h3 className={card.title}>
+              Take your Easybank card wherever you go
+            </h3>
             <p className={text["detail__articles"]}>
               We want you to enjoy your travels. This is why we don't charge any
               fees on purchases while you're abroad. We'll even show you …
@@ -64,7 +69,7 @@ export const LatestArticles = () => {
           </div>
         </article>
         <article className={card.card}>
-          <div>
+          <div className={card["card__imgContainer"]}>
             <img className={card["card__img"]} src={conffeti} />
           </div>
 
@@ -72,7 +77,9 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3 className={card.title}>Our invite-only Beta accounts are now live!</h3>
+            <h3 className={card.title}>
+              Our invite-only Beta accounts are now live!
+            </h3>
             <p className={text["detail__articles"]}>
               After a lot of hard work by the whole team, we're excited to
               launch our beta. It's easy to request an invite through the site
