@@ -37,6 +37,10 @@
     }
   }
   &__titleArticle{
+    cursor:pointer;
+    &:hover{
+      color:$LimeGreen;
+    }
      @media screen and (max-width:$tablet) {
         
        text-align: center;

@@ -35,8 +35,8 @@
       padding: unset;
       margin-top: unset;
     }
-     @media screen and (max-width:467px) {
-        padding:0 2rem;
+    @media screen and (max-width: 467px) {
+      padding: 0 2rem;
     }
   }
   &__title {
@@ -73,8 +73,8 @@
     }
   }
 
-  &__button{
+  &__button {
     font-size: 1.5rem;
-
+    cursor: pointer;
   }
 }
