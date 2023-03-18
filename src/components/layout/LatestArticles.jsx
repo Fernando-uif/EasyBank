@@ -23,7 +23,7 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3 className={card.title}>
+            <h3 className={`${card.title} ${card["card__titleArticle"]}`}>
               Receive money in any currency width no fees
             </h3>
             <p className={text["detail__articles"]}>
@@ -41,7 +41,7 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3 className={card.title}>
+            <h3 className={`${card.title} ${card["card__titleArticle"]}`}>
               Treat yourself without worrying about money
             </h3>
             <p className={text["detail__articles"]}>
@@ -59,7 +59,7 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Wilson Hutton
             </blockquote>
-            <h3 className={card.title}>
+            <h3 className={`${card.title} ${card["card__titleArticle"]}`}>
               Take your Easybank card wherever you go
             </h3>
             <p className={text["detail__articles"]}>
@@ -77,7 +77,7 @@ export const LatestArticles = () => {
             <blockquote className={card["card__block"]}>
               By Claire Robinson
             </blockquote>
-            <h3 className={card.title}>
+            <h3 className={`${card.title} ${card["card__titleArticle"]}`}>
               Our invite-only Beta accounts are now live!
             </h3>
             <p className={text["detail__articles"]}>

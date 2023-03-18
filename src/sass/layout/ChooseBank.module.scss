@@ -36,6 +36,12 @@
       padding: unset;
     }
   }
+  &__titleArticle{
+     @media screen and (max-width:$tablet) {
+        
+       text-align: center;
+    }
+  }
   &__subtitleCard {
     text-align: left;
     @media screen and (max-width: $tablet) {

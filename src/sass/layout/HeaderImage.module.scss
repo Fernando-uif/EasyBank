@@ -74,13 +74,7 @@
   }
 
   &__button{
-    @media screen and (max-width:$desktop) {
-       font-size: 1.8rem;
-        
-    }
-      @media screen and (max-width:$tablet) {
-        font-size: 1.5rem;
-      }
+    font-size: 1.5rem;
 
   }
 }
